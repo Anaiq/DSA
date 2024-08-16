@@ -2,7 +2,7 @@ import pytest
 from algorithms.sliding_window.lc_3_longest_substring_without_repeating_chars.solution import length_of_longest_substring
 
 
-class TestSlidingWindow:
+class TestLC3LongestSubstringWithoutRepeatingChars:
     # @pytest.mark.skip
     def test_no_duplicates_returns_length_of_list(self):
         # Arrange
