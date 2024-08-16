@@ -28,10 +28,7 @@ and move the i (start) pointer to the right until the duplicate char is removed
 basically closing the window past the duplicate
 """
 
-
-def main():
-
-    def length_of_longest_substring(s: str) -> int:
+def length_of_longest_substring(s: str) -> int:
         if not s:
             return 0
         
@@ -55,15 +52,15 @@ def main():
             
         return max_count
 
-
+def main():
     assert length_of_longest_substring("dvdf") == 3
     assert length_of_longest_substring("aabbb") == 2
     assert length_of_longest_substring("a") == 1
     assert length_of_longest_substring(" ") == 1
     assert length_of_longest_substring("") == 0
     assert length_of_longest_substring("abcabcbb") == 3
-
     print("assertion tests passed!")
+
 
 if __name__ == "__main__":
     main()
