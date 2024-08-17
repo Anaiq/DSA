@@ -1,8 +1,8 @@
 import pytest
-from math.lc9_palindrome_number.solution import is_palindrome
+from maths.lc9_palindrome_number.solution import is_palindrome
 
 
-class TestLlC9PalindromeNumber:
+class TestLC9PalindromeNumber:
     # @pytest.mark.skip
     def test_return_true_if_palindrome(self):
         # Arrange
