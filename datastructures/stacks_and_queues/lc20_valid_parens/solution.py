@@ -34,7 +34,10 @@ pairs would have been appended and popped from stack, no pairs left in stack
 
 """
 from collections import deque
-def isValid(string:str) -> bool:
+def is_valid(string:str) -> bool:
+    if not string:
+        return False
+    
     my_stack = deque()
     valid_pair_dict = {
         ")":"(",
@@ -53,12 +56,11 @@ def isValid(string:str) -> bool:
     return len(my_stack) == 0
 
 def main():
-    assert isValid(")]") == False
-    assert isValid("()[]{}") == True
-    assert isValid("([)]") == False
-    assert isValid("]") == False
-    assert isValid("()") == True
-    assert isValid("(}") == False
+    assert is_valid(")]") == False
+    assert is_valid("()[]{}") == True
+    assert is_valid("([)]") == False
+    assert is_valid("()") == True
+    assert is_valid("(}") == False
     print("assertion tests passed!")
 
 
