@@ -2,7 +2,7 @@ import pytest
 from datastructures.graphs.lc1971_find_if_path_exists_in_graph.solution import valid_path
 
 
-class TestLC3LongestSubstringWithoutRepeatingChars:
+class TestLC1971FindIfPathExistsInAGraph:
     # @pytest.mark.skip
     def test_valid_path_returns_true(self):
         # Arrange
