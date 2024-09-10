@@ -34,7 +34,7 @@ Brainstorm ideas:
 1. have a variable to hold the wealthiest number, loop through the matrix for 
 each account, sum each account, check if the current sum is the wealthiest,
 when finish return the wealthiest.
-2. use two pointers so only have to loop through 1x?
+2. use two pointers so only have to loop through n/2?
 
 """
 def maximum_wealth(accounts: list[list]) -> int:
